@@ -1,0 +1,22 @@
+/**
+ * @author Dexter John R. Campos <dexterjohncampos@gmail.com>
+@copyright Les Coders
+ */
+
+.leplugin-show-when-small {
+    display: none !important;
+}
+.leplugin-show-when-large {
+    display: inherit;
+}
+@media screen and (max-width: 782px) {
+    .leplugin-show-when-small {
+        display: inline-block !important;
+    }
+    .leplugin-show-when-large {
+        display: none !important;
+    }
+}
+.leplugin-dialog-no-close .ui-dialog-titlebar-close {
+    display: none;
+}

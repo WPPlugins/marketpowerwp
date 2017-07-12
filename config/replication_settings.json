@@ -1,0 +1,18 @@
+[
+  {
+    "key": "default_multisoft_mpp_replication_path",
+    "value": "/GetSiteReplicationInfo"
+  },
+  {
+    "key": "default_multisoft_mpp_check_site_name_path",
+    "value": "/CheckReplicatedSiteName"
+  },
+  {
+    "key": "default_multisoft_mpp_replication_query_format",
+    "value": "hashKey=%s&replicatedSiteName=%s"
+  },
+  {
+    "key": "default_multisoft_mpp_check_site_name_query_format",
+    "value": "hashKey=%s&siteName=%s"
+  }
+]

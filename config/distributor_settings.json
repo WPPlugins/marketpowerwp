@@ -1,0 +1,18 @@
+[
+  {
+    "key": "default_multisoft_mpp_get_countries_path",
+    "value": "/GetCountries"
+  },
+  {
+    "key": "default_multisoft_mpp_get_regions_path",
+    "value": "/GetRegions"
+  },
+  {
+    "key": "default_multisoft_mpp_get_commission_payment_method_path",
+    "value": "/GetCommissionPaymentMethods"
+  },
+  {
+    "key": "default_multisoft_mpp_get_binary_side_list_path",
+    "value": "/GetBinarySideList"
+  }
+]

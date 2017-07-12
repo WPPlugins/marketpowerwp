@@ -1,0 +1,1088 @@
+[
+  {
+    "key": "default_multisoft_mpp_add_distributor_path",
+    "value": "?op=AddDistributor"
+  },
+  {
+    "key": "default_multisoft_mpp_add_distributor_form_config",
+    "value": {
+      "formTitle": "Add New Distributor",
+      "formTitleAlignment": "center",
+      "formDescription": "Please complete the form below to add a new distributor. Fields with an asterisk (*) are required.",
+      "formDescriptionType": "info",
+      "formOrientation": "2fpl",
+      "formWidth": "100",
+      "formHeight": "500"
+    }
+  },
+  {
+    "key": "default_multisoft_mpp_add_distributor_form_separator",
+    "value": {
+      "noFormControl": true,
+      "template": "<hr />",
+      "className": "separator col-xs-12"
+    }
+  },
+  {
+    "key": "default_multisoft_mpp_add_distributor_form_fields",
+    "value": [
+      {
+        "key":"hashKey",
+        "type":"readonly",
+        "className":"col-xs-6",
+        "defaultValue":"",
+        "templateOptions":{
+          "label":"Hash Key",
+          "required":true,
+          "description":"Site GUID (Set by default)."
+        },
+        "data":{
+          "mppeDefaultValueOption":"mpp_option",
+          "mppeDefaultValue":"applicationID"
+        }
+      },
+      {
+        "key":"sponsorId",
+        "className":"col-xs-6",
+        "type":"readonly",
+        "defaultValue":"",
+        "templateOptions":{
+          "label":"Sponsor ID",
+          "required":true,
+          "description":"Sponsor GUID (Set by default)."
+        },
+        "data":{
+          "mppeDefaultValueOption":"replication",
+          "mppeDefaultValue":"DISTRIBUTORID"
+        }
+      },
+      {
+        "key":"placementId",
+        "className":"col-xs-6",
+        "type":"readonly",
+        "defaultValue":"",
+        "templateOptions":{
+          "label":"Placement ID",
+          "required":true,
+          "description":"Placement GUID (Set by default)."
+        },
+        "data":{
+          "mppeDefaultValueOption":"replication",
+          "mppeDefaultValue":"DISTRIBUTORID"
+        },
+        "hide":true
+      },
+      {
+        "key":"accountNumber",
+        "className":"col-xs-6",
+        "type":"input",
+        "defaultValue":"",
+        "templateOptions":{
+          "label":"Account Number",
+          "description":"The distributor's account number.",
+          "placeholder":"Account Number"
+        }
+      },
+      {
+        "key":"sep-1",
+        "noFormControl":true,
+        "template":"<hr >",
+        "className":"separator col-xs-12"
+      },
+      {
+        "key":"firstName",
+        "type":"input",
+        "defaultValue":"",
+        "className":"col-xs-6",
+        "templateOptions":{
+          "label":"First Name",
+          "required":true,
+          "description":"The distributor's first name.",
+          "placeholder":"First Name"
+        }
+      },
+      {
+        "key":"lastName",
+        "type":"input",
+        "defaultValue":"",
+        "className":"col-xs-6",
+        "templateOptions":{
+          "label":"Last Name",
+          "required":true,
+          "description":"The distributor's last name.",
+          "placeholder":"Last Name"
+        }
+      },
+      {
+        "key":"salutation",
+        "className":"col-xs-6",
+        "type":"input",
+        "defaultValue":"",
+        "templateOptions":{
+          "label":"Salutation",
+          "description":"The distributor's salutation.",
+          "placeholder":"Salutation"
+        }
+      },
+      {
+        "key":"middleName",
+        "className":"col-xs-6",
+        "type":"input",
+        "defaultValue":"",
+        "templateOptions":{
+          "label":"Middle Name",
+          "description":"The distributor's middle name.",
+          "placeholder":"Middle Name"
+        }
+      },
+      {
+        "key":"SSNTaxNumber",
+        "type":"input",
+        "defaultValue":"",
+        "className":"col-xs-6",
+        "templateOptions":{
+          "label":"SSN Tax Number",
+          "required":true,
+          "description":"The distributor's SSN tax number.",
+          "placeholder":"SSN Tax Number"
+        }
+      },
+      {
+        "key":"SSNTaxOption",
+        "type":"input",
+        "defaultValue":"",
+        "className":"col-xs-6",
+        "templateOptions":{
+          "label":"SSN Tax Option",
+          "description":"The distributor's SSN tax option code",
+          "placeholder":"SSN Tax Option"
+        }
+      },
+      {
+        "key":"BusinessTaxID",
+        "type":"input",
+        "defaultValue":"",
+        "className":"col-xs-6",
+        "templateOptions":{
+          "label":"Business Tax ID",
+          "description":"The distributor's business tax ID.",
+          "placeholder":"Business Tax ID"
+        }
+      },
+      {
+        "key":"userNickName",
+        "type":"input",
+        "defaultValue":"",
+        "className":"col-xs-6",
+        "templateOptions":{
+          "label":"User Nick Name",
+          "required":true,
+          "description":"The distributor's nick name.",
+          "placeholder":"Nick Name",
+          "addonLeft":{
+            "class":"fa fa-user"
+          }
+        }
+      },
+      {
+        "key":"email",
+        "type":"input",
+        "defaultValue":"",
+        "className":"col-xs-6",
+        "templateOptions":{
+          "label":"E-mail Address",
+          "required":true,
+          "description":"The distributor's e-mail address.",
+          "placeholder":"E-mail Address",
+          "addonLeft":{
+            "class":"fa fa-at"
+          }
+        },
+        "data":{
+          "mppeValidator":{
+            "email":true
+          }
+        }
+      },
+      {
+        "key":"password",
+        "className":"col-xs-6",
+        "type":"input",
+        "defaultValue":"",
+        "templateOptions":{
+          "label":"Password",
+          "type":"password",
+          "required":true,
+          "description":"The distributor's password.",
+          "placeholder":"Password",
+          "addonLeft":{
+            "class":"fa fa-asterisk"
+          }
+        }
+      },
+      {
+        "key":"confirmPassword",
+        "className":"col-xs-6",
+        "type":"input",
+        "defaultValue":"",
+        "templateOptions":{
+          "label":"Confirm Password",
+          "type":"password",
+          "required":true,
+          "description":"Confirm password.",
+          "placeholder":"Confirm Password",
+          "addonLeft":{
+            "class":"fa fa-asterisk"
+          }
+        },
+        "data":{
+          "mppeValidator":{
+            "equal":{
+              "modelKey":"password",
+              "message":"'Passwords do not match.'"
+            }
+          }
+        }
+      },
+      {
+        "key":"website",
+        "type":"input",
+        "defaultValue":"",
+        "className":"col-xs-6",
+        "templateOptions":{
+          "label":"Website",
+          "description":"The distributor's website.",
+          "placeholder":"Website",
+          "addonLeft":{
+            "class":"fa fa-link"
+          }
+        },
+        "data":{
+          "mppeValidator":{
+            "url":true
+          }
+        }
+      },
+      {
+        "key":"instantMessenger",
+        "type":"input",
+        "defaultValue":"",
+        "className":"col-xs-6",
+        "templateOptions":{
+          "label":"Instant Messenger",
+          "description":"The distributor's instant messenger.",
+          "placeholder":"Instant Messenger",
+          "addonLeft":{
+            "class":"fa fa-commenting"
+          }
+        }
+      },
+      {
+        "key":"countryId",
+        "type":"select",
+        "className":"col-xs-6",
+        "defaultValue":"50928e95-7f80-4cc6-b8a8-f23a7eba0dfc",
+        "templateOptions":{
+          "label":"Country",
+          "options":[
+
+          ],
+          "required":true,
+          "description":"The distributor's country.",
+          "addonLeft":{
+            "class":"fa fa-flag"
+          }
+        },
+        "data":{
+          "mppeRsrc":"countries"
+        }
+      },
+      {
+        "key":"regionId",
+        "type":"select",
+        "className":"col-xs-6",
+        "defaultValue":"",
+        "templateOptions":{
+          "label":"Region",
+          "options":[
+
+          ],
+          "required":true,
+          "description":"The distributor's region."
+        },
+        "data":{
+          "mppeRsrc":"regions",
+          "mppeParent":"countryId"
+        }
+      },
+      {
+        "key":"postalCode",
+        "type":"input",
+        "defaultValue":"",
+        "className":"col-xs-6",
+        "templateOptions":{
+          "label":"Postal Code",
+          "required":true,
+          "description":"The distributor's postal code.",
+          "placeholder":"Postal Code"
+        }
+      },
+      {
+        "key":"city",
+        "type":"input",
+        "defaultValue":"",
+        "className":"col-xs-6",
+        "templateOptions":{
+          "label":"City",
+          "required":true,
+          "description":"The distributor's city.",
+          "placeholder":"City"
+        }
+      },
+      {
+        "key":"address1",
+        "type":"input",
+        "defaultValue":"",
+        "className":"col-xs-6",
+        "templateOptions":{
+          "label":"Address 1",
+          "required":true,
+          "description":"The distributor's address 1.",
+          "placeholder":"Address 1"
+        }
+      },
+      {
+        "key":"address2",
+        "type":"input",
+        "defaultValue":"",
+        "className":"col-xs-6",
+        "templateOptions":{
+          "label":"Address 2",
+          "description":"The distributor's address 2.",
+          "placeholder":"Address 2"
+        }
+      },
+      {
+        "key":"county",
+        "type":"input",
+        "defaultValue":"",
+        "className":"col-xs-6",
+        "templateOptions":{
+          "label":"County",
+          "description":"The distributor's county.",
+          "placeholder":"County"
+        }
+      },
+      {
+        "key":"phone",
+        "type":"input",
+        "defaultValue":"",
+        "className":"col-xs-6",
+        "templateOptions":{
+          "label":"Phone Number",
+          "description":"The distributor's phone number.",
+          "placeholder":"Phone Number",
+          "addonLeft":{
+            "class":"fa fa-phone"
+          }
+        },
+        "data":{
+          "mppeValidator":{
+            "tel":true
+          }
+        }
+      },
+      {
+        "key":"businessPhone",
+        "type":"input",
+        "defaultValue":"",
+        "className":"col-xs-6",
+        "templateOptions":{
+          "label":"Business Phone Number",
+          "description":"The distributor's business phone number.",
+          "placeholder":"Business Phone Number",
+          "addonLeft":{
+            "class":"fa fa-phone-square"
+          }
+        },
+        "data":{
+          "mppeValidator":{
+            "tel":true
+          }
+        }
+      },
+      {
+        "key":"cell",
+        "type":"input",
+        "defaultValue":"",
+        "className":"col-xs-6",
+        "templateOptions":{
+          "required":true,
+          "label":"Mobile Number",
+          "description":"The distributor's mobile number.",
+          "placeholder":"Mobile Number",
+          "addonLeft":{
+            "class":"fa fa-mobile"
+          }
+        },
+        "data":{
+          "mppeValidator":{
+            "tel":true
+          }
+        }
+      },
+      {
+        "key":"fax",
+        "type":"input",
+        "defaultValue":"",
+        "className":"col-xs-6",
+        "templateOptions":{
+          "label":"Fax Number",
+          "description":"The distributor's fax number.",
+          "placeholder":"Fax Number",
+          "addonLeft":{
+            "class":"fa fa-fax"
+          }
+        },
+        "data":{
+          "mppeValidator":{
+            "tel":true
+          }
+        }
+      },
+      {
+        "key":"homePhone",
+        "type":"input",
+        "defaultValue":"",
+        "className":"col-xs-6",
+        "templateOptions":{
+          "label":"Home Phone Number",
+          "description":"The distributor's home phone number.",
+          "placeholder":"Home Phone Number",
+          "addonLeft":{
+            "class":"fa fa-phone"
+          }
+        },
+        "data":{
+          "mppeValidator":{
+            "tel":true
+          }
+        }
+      },
+      {
+        "key":"company",
+        "className":"col-xs-6",
+        "defaultValue":"",
+        "type":"input",
+        "templateOptions":{
+          "label":"Company Name",
+          "description":"The distributor's company name.",
+          "placeholder":"Company Name",
+          "addonLeft":{
+            "class":"fa fa-building"
+          }
+        }
+      },
+      {
+        "key":"iMode",
+        "defaultValue":"",
+        "className":"col-xs-6",
+        "type":"input",
+        "templateOptions":{
+          "label":"I-Mode",
+          "description":"The distributor's IMode.",
+          "placeholder":"IMode"
+        },
+        "hide":true
+      },
+      {
+        "key":"birthday",
+        "className":"col-xs-6",
+        "type":"datepicker",
+        "defaultValue":"",
+        "templateOptions":{
+          "label":"Birthdate",
+          "type":"text",
+          "datepickerOptions":{
+            "format":"MM\/dd\/yyyy"
+          },
+          "required":true,
+          "description":"The distributor's birthdate.",
+          "placeholder":"Birthdate"
+        }
+      },
+      {
+        "key":"sep-2",
+        "noFormControl":true,
+        "template":"<hr >",
+        "className":"separator col-xs-12"
+      },
+      {
+        "key":"ShippingAddress1",
+        "className":"col-xs-6",
+        "defaultValue":"",
+        "type":"input",
+        "templateOptions":{
+          "label":"Shipping Address 1",
+          "required":true,
+          "description":"The distributor's shipping address 1.",
+          "placeholder":"Shipping Address 1"
+        }
+      },
+      {
+        "key":"ShippingAddress2",
+        "defaultValue":"",
+        "className":"col-xs-6",
+        "type":"input",
+        "templateOptions":{
+          "label":"Shipping Address 2",
+          "description":"The distributor's shipping address 2.",
+          "placeholder":"Shipping Address 2"
+        }
+      },
+      {
+        "key":"ShippingCity",
+        "defaultValue":"",
+        "className":"col-xs-6",
+        "type":"input",
+        "templateOptions":{
+          "label":"Shipping City",
+          "placeholder":"Shipping City",
+          "required":true
+        }
+      },
+      {
+        "key":"ShippingCountryId",
+        "className":"col-xs-6",
+        "type":"select",
+        "defaultValue":"50928e95-7f80-4cc6-b8a8-f23a7eba0dfc",
+        "templateOptions":{
+          "label":"Shipping Country",
+          "required":true,
+          "description":"The distributor's shipping country.",
+          "options":[
+
+          ],
+          "addonLeft":{
+            "class":"fa fa-flag"
+          }
+        },
+        "data":{
+          "mppeRsrc":"countries"
+        }
+      },
+      {
+        "key":"ShippingRegionId",
+        "className":"col-xs-6",
+        "defaultValue":"",
+        "type":"select",
+        "templateOptions":{
+          "label":"Shipping Region",
+          "required":true,
+          "options":[
+
+          ],
+          "description":"The distributor's shipping region."
+        },
+        "data":{
+          "mppeRsrc":"regions",
+          "mppeParent":"ShippingCountryId"
+        }
+      },
+      {
+        "key":"ShippingPostalCode",
+        "className":"col-xs-6",
+        "type":"input",
+        "defaultValue":"",
+        "templateOptions":{
+          "label":"Shipping Postal Code",
+          "required":true,
+          "description":"The distributor's shipping postal code.",
+          "placeholder":"Shipping Postal Code"
+        }
+      },
+      {
+        "key":"sep-3",
+        "noFormControl":true,
+        "template":"<hr >",
+        "className":"separator col-xs-12"
+      },
+      {
+        "key":"BillingAddress1",
+        "className":"col-xs-6",
+        "type":"input",
+        "defaultValue":"",
+        "templateOptions":{
+          "label":"Billing Address 1",
+          "required":true,
+          "description":"The distributor's billing address 1.",
+          "placeholder":"Billing Address 1"
+        }
+      },
+      {
+        "key":"BillingAddress2",
+        "className":"col-xs-6",
+        "type":"input",
+        "defaultValue":"",
+        "templateOptions":{
+          "label":"Billing Address 2",
+          "description":"The distributor's billing address 2.",
+          "placeholder":"Billing Address 2"
+        }
+      },
+      {
+        "key":"BillingCity",
+        "className":"col-xs-6",
+        "type":"input",
+        "defaultValue":"",
+        "templateOptions":{
+          "label":"Billing City",
+          "placeholder":"Billing City",
+          "required":true
+        }
+      },
+      {
+        "key":"BillingCountryId",
+        "className":"col-xs-6",
+        "type":"select",
+        "defaultValue":"50928e95-7f80-4cc6-b8a8-f23a7eba0dfc",
+        "templateOptions":{
+          "label":"Billing Country",
+          "required":true,
+          "description":"The distributor's billing country.",
+          "addonLeft":{
+            "class":"fa fa-flag"
+          },
+          "options":[
+
+          ]
+        },
+        "data":{
+          "mppeRsrc":"countries"
+        }
+      },
+      {
+        "key":"BillingRegionId",
+        "className":"col-xs-6",
+        "defaultValue":"",
+        "type":"select",
+        "templateOptions":{
+          "label":"Billing Region",
+          "options":[
+
+          ],
+          "required":true,
+          "description":"The distributor's billing region."
+        },
+        "data":{
+          "mppeRsrc":"regions",
+          "mppeParent":"BillingCountryId"
+        }
+      },
+      {
+        "key":"BillingPostalCode",
+        "className":"col-xs-6",
+        "type":"input",
+        "defaultValue":"",
+        "templateOptions":{
+          "label":"Billing Postal Code",
+          "required":true,
+          "description":"The distributor's billing postal code.",
+          "placeholder":"Billing Postal Code"
+        }
+      },
+      {
+        "key":"addressName",
+        "type":"select",
+        "className":"col-xs-6",
+        "defaultValue":"",
+        "templateOptions":{
+          "label":"Address Name",
+          "required":true,
+          "options":[
+            {
+              "name":"Select Address Name",
+              "value":""
+            },
+            {
+              "name":"Shipping",
+              "value":"Shipping"
+            },
+            {
+              "name":"Billing",
+              "value":"Billing"
+            }
+          ],
+          "description":"The distributor's address name.",
+          "placeholder":"Address Name"
+        }
+      },
+      {
+        "key":"sep-4",
+        "noFormControl":true,
+        "template":"<hr >",
+        "className":"separator col-xs-12"
+      },
+      {
+        "key":"yahooId",
+        "type":"input",
+        "defaultValue":"",
+        "className":"col-xs-6",
+        "templateOptions":{
+          "label":"Yahoo ID",
+          "description":"The distributor's Yahoo ID.",
+          "placeholder":"Yahoo ID",
+          "addonLeft":{
+            "class":"fa fa-yahoo"
+          }
+        }
+      },
+      {
+        "key":"MsnId",
+        "className":"col-xs-6",
+        "type":"input",
+        "defaultValue":"",
+        "templateOptions":{
+          "label":"MSN ID",
+          "description":"The distributor's MSN ID.",
+          "placeholder":"MSN ID"
+        }
+      },
+      {
+        "key":"ICQId",
+        "className":"col-xs-6",
+        "type":"input",
+        "defaultValue":"",
+        "templateOptions":{
+          "label":"ICQ ID",
+          "description":"The distributor's ICQ ID.",
+          "placeholder":"ICQ ID"
+        }
+      },
+      {
+        "key":"AIMId",
+        "className":"col-xs-6",
+        "type":"input",
+        "defaultValue":"",
+        "templateOptions":{
+          "label":"AIM ID",
+          "description":"The distributor's AIM ID.",
+          "placeholder":"AIM ID"
+        }
+      },
+      {
+        "key":"SkypeId",
+        "className":"col-xs-6",
+        "type":"input",
+        "defaultValue":"",
+        "templateOptions":{
+          "label":"Skype ID",
+          "description":"The distributor's Skype ID.",
+          "placeholder":"Skype ID",
+          "addonLeft":{
+            "class":"fa fa-skype"
+          }
+        }
+      },
+      {
+        "key":"FaceBookId",
+        "className":"col-xs-6",
+        "type":"input",
+        "defaultValue":"",
+        "templateOptions":{
+          "label":"Facebook ID",
+          "description":"The distributor's Facebook ID.",
+          "placeholder":"Facebook ID",
+          "addonLeft":{
+            "class":"fa fa-facebook"
+          }
+        }
+      },
+      {
+        "key":"TwitterId",
+        "className":"col-xs-6",
+        "type":"input",
+        "defaultValue":"",
+        "templateOptions":{
+          "label":"Twitter ID",
+          "description":"The distributor's Twitter ID.",
+          "placeholder":"Twitter ID",
+          "addonLeft":{
+            "class":"fa fa-twitter"
+          }
+        }
+      },
+      {
+        "key":"LinkedInId",
+        "className":"col-xs-6",
+        "type":"input",
+        "defaultValue":"",
+        "templateOptions":{
+          "label":"LinkedIn ID",
+          "description":"The distributor's LinkedIn ID.",
+          "placeholder":"LinkedIn ID",
+          "addonLeft":{
+            "class":"fa fa-linkedin"
+          }
+        }
+      },
+      {
+        "key":"GooglePlusId",
+        "className":"col-xs-6",
+        "type":"input",
+        "defaultValue":"",
+        "templateOptions":{
+          "label":"Google Plus ID",
+          "description":"The distributor's Google Plus ID.",
+          "placeholder":"Google Plus ID",
+          "addonLeft":{
+            "class":"fa fa-google-plus"
+          }
+        }
+      },
+      {
+        "key":"YouTubeId",
+        "className":"col-xs-6",
+        "type":"input",
+        "defaultValue":"",
+        "templateOptions":{
+          "label":"YouTube ID",
+          "description":"The distributor's YouTube ID.",
+          "placeholder":"YouTube ID",
+          "addonLeft":{
+            "class":"fa fa-youtube"
+          }
+        }
+      },
+      {
+        "key":"RSSFeedId",
+        "className":"col-xs-6",
+        "type":"input",
+        "defaultValue":"",
+        "templateOptions":{
+          "label":"RSS Feed ID",
+          "description":"The distributor's RSS Feed ID.",
+          "placeholder":"RSS Feed ID",
+          "addonLeft":{
+            "class":"fa fa-rss"
+          }
+        }
+      },
+      {
+        "key":"sep-5",
+        "noFormControl":true,
+        "template":"<hr >",
+        "className":"separator col-xs-12"
+      },
+      {
+        "key":"AddInBinary",
+        "className":"col-xs-6",
+        "type":"checkbox",
+        "defaultValue":false,
+        "templateOptions":{
+          "label":"Add in Binary Tree",
+          "description":"Check if distributor will be added in binary tree."
+        }
+      },
+      {
+        "key":"binaryPrefferSide",
+        "className":"col-xs-6",
+        "type":"input",
+        "defaultValue":0,
+        "templateOptions":{
+          "label":"Binary Prefer Side Value"
+        },
+        "data":{
+          "mppeValidator":{
+            "numeric":true
+          },
+          "mppeParent":"AddInBinary"
+        }
+      },
+      {
+        "key":"sep-6",
+        "noFormControl":true,
+        "template":"<hr >",
+        "className":"separator col-xs-12"
+      },
+      {
+        "key":"AddInMatrix",
+        "className":"col-xs-6",
+        "type":"checkbox",
+        "defaultValue":false,
+        "templateOptions":{
+          "label":"Add in Matrix Tree",
+          "description":"Check if distributor will be added in matrix tree."
+        }
+      },
+      {
+        "key":"matrixPrefferSide",
+        "className":"col-xs-6",
+        "type":"input",
+        "defaultValue":0,
+        "templateOptions":{
+          "type":"numeric",
+          "label":"Matrix Prefer Side Value"
+        },
+        "data":{
+          "mppeValidator":{
+            "numeric":true
+          },
+          "mppeParent":"AddInMatrix"
+        }
+      },
+      {
+        "key":"sep-7",
+        "noFormControl":true,
+        "template":"<hr >",
+        "className":"separator col-xs-12"
+      },
+      {
+        "key":"AddInUnilevel",
+        "type":"checkbox",
+        "className":"col-xs-6",
+        "defaultValue":false,
+        "templateOptions":{
+          "label":"Add in Unilevel Tree",
+          "description":"Check if distributor will be added in unilevel tree."
+        }
+      },
+      {
+        "key":"BinarySpillingDirections",
+        "className":"col-xs-6",
+        "type":"select",
+        "defaultValue":0,
+        "templateOptions":{
+          "label":"Binary Spilling Directions",
+          "options":[
+
+          ]
+        },
+        "data":{
+          "mppeDefaultValueOption":"text",
+          "mppeDefaultValue":"0",
+          "mppeRsrc":"binarySpillingDirections"
+        }
+      },
+      {
+        "key":"sep-8",
+        "noFormControl":true,
+        "template":"<hr >",
+        "className":"separator col-xs-12"
+      },
+      {
+        "key":"CommissionPaymentMethodId",
+        "type":"select",
+        "defaultValue":0,
+        "className":"col-xs-6",
+        "templateOptions":{
+          "required":true,
+          "options":[
+
+          ],
+          "label":"Commission Payment Method",
+          "description":"Distributor's Commission Method"
+        },
+        "data":{
+          "mppeDefaultValueOption":"text",
+          "mppeDefaultValue":"",
+          "mppeRsrc":"commissionPaymentMethods"
+        }
+      },
+      {
+        "key":"UserSiteName",
+        "type":"input",
+        "defaultValue":"",
+        "className":"col-xs-6",
+        "templateOptions":{
+          "label":"User Site Name",
+          "required":true,
+          "description":"Distributor's Site Name",
+          "placeholder":"User Site Name"
+        }
+      },
+      {
+        "key":"sep-9",
+        "noFormControl":true,
+        "template":"<hr >",
+        "className":"separator col-xs-12"
+      },
+      {
+        "key":"freeMemberStatus",
+        "type":"checkbox",
+        "defaultValue":false,
+        "className":"col-xs-6",
+        "templateOptions":{
+          "label":"Free Membership",
+          "description":"Check if free member."
+        }
+      },
+      {
+        "key":"freeMemberName",
+        "type":"input",
+        "defaultValue":"",
+        "className":"col-xs-6",
+        "templateOptions":{
+          "label":"Free Member Name",
+          "description":"Free Member Name.",
+          "placeholder":"Free Member Name"
+        },
+        "data":{
+          "mppeParent":"freeMemberStatus"
+        },
+        "expressionProperties":{
+          "templateOptions.required":"model.freeMemberStatus"
+        }
+      },
+      {
+        "key":"freeMemberDate",
+        "type":"datepicker",
+        "defaultValue":"",
+        "className":"col-xs-6",
+        "templateOptions":{
+          "label":"Free Member Date",
+          "description":"Free Membership Date.",
+          "placeholder":"Free Member Date",
+          "type":"text",
+          "datepickerOptions":{
+            "format":"MM\/dd\/yyyy"
+          }
+        },
+        "data":{
+          "mppeParent":"freeMemberStatus"
+        },
+        "expressionProperties":{
+          "templateOptions.required":"model.freeMemberStatus"
+        }
+      },
+      {
+        "key":"freeMemberReason",
+        "type":"textarea",
+        "defaultValue":"",
+        "className":"col-xs-6",
+        "templateOptions":{
+          "label":"Free Membership Reason",
+          "description":"Reason for being a free member.",
+          "placeholder":"Free Membership Reason"
+        },
+        "data":{
+          "mppeParent":"freeMemberStatus"
+        }
+      },
+      {
+        "key":"roleId",
+        "type":"readonly",
+        "defaultValue":0,
+        "className":"col-xs-6",
+        "templateOptions":{
+          "label":"Role",
+          "description":"Distributor's role ID. (Set by Default)"
+        },
+        "data":{
+          "mppeDefaultValueOption":"text",
+          "mppeDefaultValue":"9"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,6 @@
+[
+  {
+    "key": "default_multisoft_mpp_web_path",
+    "value": "/Modules/MLM/WebServices/MPPE/MPPEWebServices/WSMppeAPI.asmx"
+  }
+]
